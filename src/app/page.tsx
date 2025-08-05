@@ -1,3 +1,10 @@
-export default function HomePage() {
-  return <h1>Olá de dentro de page.ts</h1>;
+import Header from "@/components/Header";
+
+export default async function HomePage() {
+  console.log("HEADER");
+  return (
+    <div>
+      <Header />
+    </div>
+  );
 }

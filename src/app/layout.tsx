@@ -13,15 +13,7 @@ type RootLayoutProps = {
 export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
   return (
     <html lang="en">
-      <body>
-        <header>
-          <h2>Header</h2>
-        </header>
-        <div className="bg-red-500">{children}</div>
-        <footer>
-          <h3>Footer</h3>
-        </footer>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
