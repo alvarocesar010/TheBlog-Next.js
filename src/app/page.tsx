@@ -14,15 +14,14 @@ export default async function HomePage() {
 
       <section
         className="
-      grid grid-cols-1 gap-8 mb-16
-      sm:grid-cols-2
-      group
-      "
+                    grid grid-cols-1 gap-8 mb-16
+                    sm:grid-cols-2
+                    group "
       >
         <PostCoverImage
           imageProps={{
             width: 1200,
-            height: 700,
+            height: 720,
             alt: "Uma bela imagem",
             src: "/images/bryen_8.png",
             priority: true,
@@ -34,7 +33,7 @@ export default async function HomePage() {
           <time className="text-slate-600 text-sm" dateTime="2025-04-20">
             20/04/205 10:00
           </time>
-          <PostHeading as="h2" url="#">
+          <PostHeading as="h1" url="#">
             Maiores quod repudiandae velit quo
           </PostHeading>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium
