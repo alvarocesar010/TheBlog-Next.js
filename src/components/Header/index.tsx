@@ -1,23 +1,20 @@
-"use client";
-import clsx from "clsx";
+import Link from "next/link";
 
 const Header = () => {
   return (
-    <div>
-      <h1
-        className={clsx(
-          { "text-xl": true },
-          "font-bold",
-          "text-blue-500",
-          "hover:text-blue-50",
-          "transition",
-          "duration-1000",
-        )}
-        onClick={() => alert(123)}
+    <header>
+      <Link
+        href="#"
+        className="
+        text-4xl/normal font-extrabold py-8
+        sm:text-5xl/normal sm:py-10
+        md:text-6xl/normal md:py-12
+        lg:text-7xl/normal lg:py-12
+        "
       >
-        Texto do meu h1
-      </h1>
-    </div>
+        The blog
+      </Link>
+    </header>
   );
 };
 
