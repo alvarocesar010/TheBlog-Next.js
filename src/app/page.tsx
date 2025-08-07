@@ -1,16 +1,17 @@
 import Container from "@/components/Container";
 import Header from "@/components/Header";
+import PostCoverImage from "@/components/PostCoverImage";
 import PostHeading from "@/components/PostHeading";
 import PostsList from "@/components/PostsList";
 import SpinLoader from "@/components/SpinLoader";
-import Image from "next/image";
-import Link from "next/link";
+
 import { Suspense } from "react";
 
 export default async function HomePage() {
   return (
     <Container>
       <Header />
+
       <section
         className="
       grid grid-cols-1 gap-8 mb-16
@@ -18,16 +19,17 @@ export default async function HomePage() {
       group
       "
       >
-        <Link href="#" className="w-full h-full overflow-hidden rounded-xl">
-          <Image
-            className="w-full h-full group-hover:scale-105 transition object-cover object-center"
-            src="/images/bryen_0.png"
-            width={1200}
-            height={720}
-            alt="Titulo do post"
-            priority
-          />
-        </Link>
+        <PostCoverImage
+          imageProps={{
+            width: 1200,
+            height: 700,
+            alt: "Uma bela imagem",
+            src: "/images/bryen_8.png",
+            priority: true,
+          }}
+          linkProps={{ href: "#" }}
+        />
+
         <div className="flex flex-col gap-4 sm:justify-center">
           <time className="text-slate-600 text-sm" dateTime="2025-04-20">
             20/04/205 10:00
