@@ -22,7 +22,7 @@ const SpinLoader = ({ containerClasses = "" }: SpinLoaderProps) => {
           "border-t-slate-400",
           "border-slate-900",
           "rounded-full",
-          "animate-spin",
+          "animate-spin",''
         )}
       ></div>
     </div>
